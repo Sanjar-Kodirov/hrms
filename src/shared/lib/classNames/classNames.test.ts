@@ -8,12 +8,12 @@ describe('classNames', () => {
         expect(classNames('someClass', {}, ['additionalClass'])).toBe('someClass additionalClass');
     });
 
-    test('with mods', () => {
-        expect(classNames('someClass', { someMod: false })).toBe('someClass');
-    });
-
     test('with mods and additional classes', () => {
         expect(classNames('someClass', { someMod: false }, ['additionalClass'])).toBe('someClass additionalClass');
+    });
+
+    test('with mods', () => {
+        expect(classNames('someClass', { someMod: true })).toBe('someClass someMod');
     });
 
     test('with mods false', () => {
