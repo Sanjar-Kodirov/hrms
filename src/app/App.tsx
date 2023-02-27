@@ -6,6 +6,7 @@ import { Navbar } from 'widgets/Navbar';
 import { PageLoader } from 'widgets/PageLoader/PageLoader';
 import { Sidebar } from 'widgets/Sidebar';
 import AppRouter from './providers/router/ui/AppRouter';
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const App = () => {
     const { theme } = useTheme();
