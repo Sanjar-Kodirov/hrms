@@ -10,10 +10,6 @@ import AppRouter from './providers/router/ui/AppRouter';
 const App = () => {
     const { theme } = useTheme();
 
-    // useEffect(() => {
-    //     throw new Error('Test error');
-    // }, []);
-
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback={<PageLoader />}>
