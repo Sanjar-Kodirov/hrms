@@ -2,7 +2,7 @@ import React, { ErrorInfo, ReactNode, Suspense } from 'react';
 import { ErrorPage } from 'widgets/ErrorPage/ui/ErrorPage';
 
 interface ErrorBoundaryProps {
-    children: any;
+    children: ReactNode;
 }
 
 interface ErrorBoundaryState {

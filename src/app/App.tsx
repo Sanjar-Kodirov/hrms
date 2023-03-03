@@ -1,19 +1,17 @@
-import './styles/index.scss';
-import { useTheme } from 'app/providers/ThemeProvider';
 import React, { Suspense, useEffect } from 'react';
+import './styles/index.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
+import { useTheme } from 'app/providers/ThemeProvider';
+import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
-import { PageLoader } from 'widgets/PageLoader/PageLoader';
 import { Sidebar } from 'widgets/Sidebar';
-import AppRouter from './providers/router/ui/AppRouter';
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-const App = () => {
+function App() {
     const { theme } = useTheme();
 
     return (
         <div className={classNames('app', {}, [theme])}>
-            <Suspense fallback={<PageLoader />}>
+            <Suspense fallback="">
                 <Navbar />
                 <div className="content-page">
                     <Sidebar />
@@ -22,6 +20,6 @@ const App = () => {
             </Suspense>
         </div>
     );
-};
+}
 
 export default App;
