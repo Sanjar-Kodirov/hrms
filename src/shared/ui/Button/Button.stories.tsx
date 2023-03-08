@@ -23,19 +23,18 @@ Primary.args = {
 export const Clear = Template.bind({});
 Clear.args = {
     children: 'Text',
-    theme: ThemeButton.CLEAR
+    theme: ThemeButton.CLEAR,
 };
 
 export const Outlined = Template.bind({});
 Outlined.args = {
     children: 'Text',
-    theme: ThemeButton.OUTLINE
+    theme: ThemeButton.OUTLINE,
 };
 
 export const OutlineDark = Template.bind({});
 OutlineDark.args = {
     children: 'Text',
-    theme: ThemeButton.OUTLINE
+    theme: ThemeButton.OUTLINE,
 };
 OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
-
